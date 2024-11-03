@@ -1,0 +1,28 @@
+---
+apiVersion: v1/networking.k8s.io
+kind: Ingress
+metadata:
+  name: ingress-app
+  annotations: 
+    nginx.ingress.kubernetes.io/rewrite-target: 
+  labels:
+    app: web
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /preschool
+            pathType: Prefix
+            backend:
+              service:
+                name: preschool-svc
+                port: 
+                  number: 80
+          - path: /skate
+            pathType: Prefix
+            backend:
+              service:
+                name: skate-svc
+                port: 
+                  number: 80
