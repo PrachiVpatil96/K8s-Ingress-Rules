@@ -61,6 +61,8 @@ kubectl get pods --namespace ingress-nginx
     - for Skate
     put `/skate` after `ip-addresss`
     `http://ip-address/skate`
-    [Preview](Img10.PNG)
+
+
+[Preview](Img10.PNG)
 
 
