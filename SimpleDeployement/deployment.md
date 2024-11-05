@@ -7,7 +7,7 @@ website](https://www.free-css.com/free-css-templates)
     - prachiii123/preschool
     - This runs a preshool  app on path /preschool  on    port 80
    - prachiii123/skate
-    - This runs a skate board app on path /skate on port 80 [preview](Img9.PNG)
+    - This runs a skate board app on path /skate on port 80 ![preview](Img9.PNG)
 4. Lets write an simple deployment file for above applications.
   [Preschool](Preschool.yaml)
   [Skate](Skate.yaml)
@@ -23,18 +23,19 @@ website](https://www.free-css.com/free-css-templates)
 1. Create a Namespace
 ```bash
 kubectl create namespace ingress-nginx
-```
+``` 
+![Previw](Img6.PNG)
 2. Apply the NGINX Ingress Controller Manifest:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
 ```
-   [Preview](Img7.PNG)
+   ![Preview](Img7.PNG)
 
 3. Verify the Deployment:
 ```bash
 kubectl get pods --namespace ingress-nginx
 ```
-  [Preview](Img6.PNG)
+  ![Preview](Img6.PNG)
 
 4. Check the Service:
   - To see if the NGINX Ingress Controller has been assigned a public IP address, run:
@@ -53,7 +54,7 @@ kubectl get pods --namespace ingress-nginx
  ```
  kubectl get all
  ```
- [Preview](Img8.PNG)
+ ![Preview](Img8.PNG)
 
  7. To check website for Preschool
     put `/preschool` after `ip-addresss`
@@ -63,6 +64,6 @@ kubectl get pods --namespace ingress-nginx
     `http://ip-address/skate`
 
 
-[Preview](Img10.PNG)
+![Preview](Img10.PNG)
 
 
